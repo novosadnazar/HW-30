@@ -1,0 +1,45 @@
+.container {
+    width: 1600px;
+    height: 1000px;
+    border: 5px solid black;
+    position: relative;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation-name: move-box;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-box {
+    0% {
+        background-color: yellow;
+        top: 100px;
+        left: 200px;
+    }
+
+    25% {
+        background-color: red;
+        left: 300px;
+        top: 400px;
+    } 
+
+    50% {
+        background-color: blue;
+        top: 400px;
+        left: 800px;
+    }
+
+    75% {
+        background-color: green;
+        left: 900px;
+        top: 100px;
+    }
+}
